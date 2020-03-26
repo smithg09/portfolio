@@ -1,0 +1,11 @@
+<svg width="100" height="87" viewBox="0 0 100 87" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="red-triangle_svg__a" d="M.295.364h99.251v86.23H.295z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="red-triangle_svg__b" fill="#fff">
+            <use xlink:href="#red-triangle_svg__a"/>
+        </mask>
+        <path fill="#FAD2CF" mask="url(#red-triangle_svg__b)" d="M99.546 86.594L49.92.364.295 86.594"/>
+    </g>
+</svg>
