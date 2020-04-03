@@ -9986,3 +9986,126 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  .terminalsizeanimated {
+-webkit-transition: width 0.5s, -webkit-transform 0.5s;
+transition: width 0.5s, transform 0.5s; }
+
+.closedTerminal {
+width: 2px; }
+
+.openedTerminal {
+width: 300px; }
+
+#contTerminal {
+position: fixed;
+top: 0;
+right: 0;
+height: 100%;
+z-index: 9999;
+overflow: visible;
+background: #132838;
+overflow-x: hidden;
+overflow-y: overlay;
+-webkit-overflow-scrolling: touch; }
+#contTerminal::-webkit-scrollbar {
+  background: none;
+  width: 9px; }
+#contTerminal::-webkit-scrollbar-button {
+  display: none; }
+#contTerminal::-webkit-scrollbar-track {
+  display: none; }
+#contTerminal::-webkit-scrollbar-track-piece {
+  display: none; }
+#contTerminal::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 2px solid transparent; }
+#contTerminal::-webkit-scrollbar-corner {
+  display: none; }
+#contTerminal::-webkit-resizer {
+  display: none; }
+#contTerminal:hover::-webkit-scrollbar-thumb {
+  background: rgba(30, 62, 86, 0.7);
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 1px solid rgba(21, 48, 67, 0.7); }
+  #contTerminal:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6);
+    background-clip: content-box;
+    border-radius: 10px;
+    border: 1px solid rgba(21, 48, 67, 0.7); }
+#contTerminal .terminalHandle {
+  width: 50px;
+  height: 40px;
+  background: #132838;
+  position: absolute;
+  top: 20px;
+  left: auto;
+  margin-left: -50px;
+  background-image: url("../images/backterminalhandle2.png");
+  background-size: 100px 40px;
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+@media only screen and (max-width: 800px) {
+#contTerminal {
+  display: none; } }
+#onlineTerminal {
+color: white;
+background: #132838;
+height: 100%;
+padding: 30px;
+margin-right: 10px;
+font-family: monospace;
+font-size: 19px;
+line-height: 20px;
+white-space: pre-wrap;
+outline: 0;
+overflow: auto;
+box-sizing: border-box;
+overflow-x: hidden;
+overflow-y: overlay;
+-webkit-overflow-scrolling: touch; }
+#onlineTerminal::-webkit-scrollbar {
+  background: none;
+  width: 9px; }
+#onlineTerminal::-webkit-scrollbar-button {
+  display: none; }
+#onlineTerminal::-webkit-scrollbar-track {
+  display: none; }
+#onlineTerminal::-webkit-scrollbar-track-piece {
+  display: none; }
+#onlineTerminal::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 2px solid transparent; }
+#onlineTerminal::-webkit-scrollbar-corner {
+  display: none; }
+#onlineTerminal::-webkit-resizer {
+  display: none; }
+#onlineTerminal:hover::-webkit-scrollbar-thumb {
+  background: rgba(30, 62, 86, 0.7);
+  background-clip: content-box;
+  border-radius: 10px;
+  border: 1px solid rgba(21, 48, 67, 0.7); }
+  #onlineTerminal:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6);
+    background-clip: content-box;
+    border-radius: 10px;
+    border: 1px solid rgba(21, 48, 67, 0.7); }
+#onlineTerminal span {
+  color: #4681ae; }
+#onlineTerminal span.response {
+  color: #66d9ef; }
+#onlineTerminal strong, #onlineTerminal b {
+  font-weight: normal;
+  color: #f4ba11; }
+#onlineTerminal a {
+  font-weight: normal;
+  color: #f4ba11;
+  text-decoration: underline; }
+  #onlineTerminal a span {
+    color: #f4ba11; }
