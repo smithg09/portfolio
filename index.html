@@ -4,6 +4,20 @@
 		<title>Smith Gajjar</title>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162602429-1"></script>
+			<!-- Google Tag Manager -->
+			<script>
+				(function (w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+					j.async = true;
+					j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, 'script', 'dataLayer', 'GTM-58P2N4Q');
+			</script>
+			<!-- End Google Tag Manager -->
 			<script>
 				window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
@@ -74,7 +88,12 @@
 
 	</script>		
 	</head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58P2N4Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand " href="/"><span class="v1">Sm</span> ith<span style="font-family: monospace;color: #000000;font-size: 45px;">.</span></a>
@@ -699,7 +718,9 @@
       </div>
     </footer>
     
-  
+  <div id="error" style="position: absolute;top: 0;"> 
+
+  </div>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="var(--primary)"/></svg></div>
@@ -785,8 +806,15 @@ default : '#15b9d7',
 pickr.on('save', instance => {
 	let root = document.documentElement;
 	let accent_color = instance.toRGBA();
-	root.style.setProperty('--primary', accent_color);
-	console.log(accent_color)
+	total = accent_color[0] + accent_color[1] + accent_color[2]; 
+	console.log(total)
+	// console.log(accent_color[0],accent_color[1],accent_color )
+	if( total > 660 ){
+		alert("Uh oh, Please select color other than WHITE👀")
+	}
+	else {
+		root.style.setProperty('--primary', accent_color);
+	}
 })
 
 
