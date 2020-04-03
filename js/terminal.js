@@ -5,7 +5,7 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 if (_is_mobile) {
   $("#contTerminal").remove();
 } else {
-  //$('#contTerminal').css('position', 'absolute').css('minHeight', $(document).height()+'px');
+  $('#contTerminal').css('position', 'absolute').css('minHeight', $(document).height()+'px');
 
   //From: http://stackoverflow.com/questions/237104/array-containsobj-in-javascript
   Array.prototype.contains = function(obj) {
@@ -44,7 +44,7 @@ if (_is_mobile) {
       "SPAN",
       "STRONG"
     ];
-    return node.nodeType == 1 ? !voidNodeTags.contains(node.nodeName) : false;
+    return node.nodeType == 1 ? !voidNodeTags.includes(node.nodeName) : false;
   }
 
   function getLastChildElement(el) {
@@ -173,12 +173,12 @@ if (_is_mobile) {
         .removeClass("closedTerminal")
         .addClass("openedTerminal");
       terminalOpen = true;
-      $("#contTerminal").resizable({
-        handles: "w",
-        resize: function() {
-          $(this).css("left", "auto");
-        }
-      });
+      // $("#contTerminal").resizable({
+      //   handles: "w",
+      //   resize: function() {
+      //     $(this).css("left", "auto");
+      //   }
+      // });
       setTimeout(function() {
         $("#contTerminal").removeClass("terminalsizeanimated");
         welcomeText =

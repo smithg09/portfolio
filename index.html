@@ -48,7 +48,7 @@
 			<link rel="stylesheet" href="css/animate.css">
 			<link rel="stylesheet" href="css/owl.carousel.min.css">
 			<link rel="stylesheet" href="css/owl.theme.default.min.css">
-			<link rel="stylesheet" href="css/maggitnific-popup.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
 			<link rel="stylesheet" href="css/aos.css">
 			<link rel="stylesheet" href="css/ionicons.min.css">
 			<link rel="stylesheet" href="css/flaticon.css">
@@ -58,7 +58,7 @@
 			</head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
+		<div class="container" style="position: relative;">
 	      <a class="navbar-brand " href="/"><span class="v1">Sm</span> ith<span style="font-family: monospace;color: #000000;font-size: 45px;">.</span></a>
 		  <div class="Accent" data-toggle="tooltip" data-placement="right" title="Change Accent color!">
 			  <input type="color" class="color-picker" onchange="change_accent()" >
@@ -702,25 +702,26 @@ var name = document.getElementById("name").value
     Subject : "By " + name +" : "+subject,
     Body : body
 }).then(
-  message => {if(message === "OK") {  alert("Message Sent") }else { alert(message)}}
-);
+	message => {if(message === "OK") {  alert("Message Sent") }else { alert(message)}}
+	);
 
 }
 </script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- One of the following themes -->
+<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<!-- <script src="./js/terminal.js"></script>  -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- One of the following themes -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 'classic' theme -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> 'nano' theme -->
@@ -774,5 +775,13 @@ pickr.on('save', instance => {
 		function change_accent() {
 		}
 	</script>
+<!-- <div id="contTerminal" class="ui-resizable terminalsizeanimated closedTerminal" style="overflow: visible !important">
+    <div id="onlineTerminal" contenteditable="true" spellcheck="false"></div>
+    <a href="#" onclick="launchJSTerminal();return false;" class="terminalHandle" style="background-position: 0px 0px;"></a>
+    <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+</div>
+  -->
+
+
   </body>
 </html>

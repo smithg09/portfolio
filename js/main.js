@@ -385,16 +385,16 @@ window.onload = function() {
     sections.push($($(this).attr('href')));
     
   })
-  $(window).scroll(function(e){
+	$(window).scroll(function (e) {
     // scrollTop retains the value of the scroll top with the reference at the middle of the page
     var scrollTop = $(this).scrollTop() + ($(window).height()/2);
-    //cycle through the values in sections array
-    for (var i in sections) {
-      var section = sections[i];
-      //if scrollTop variable is bigger than the top offset of a section in the sections array then 
-      if (scrollTop > section.offset().top){
-        var scrolled_id = section.attr('id');
-      }
+	//cycle through the values in sections array
+	  for (var i in sections) {
+	  var section = sections[i];
+	
+     if (scrollTop > section.offset().top) {
+       var scrolled_id = section.attr("id");
+     }
     }
     if (scrolled_id !== id) {
       id = scrolled_id;
