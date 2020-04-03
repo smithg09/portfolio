@@ -35,9 +35,14 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
-  .border-primary {
-    border-color: var(--primary) !important;
-  }
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.pcr-app button.pcr-active, .pcr-app button:focus, .pcr-app input.pcr-active, .pcr-app input:focus, .pickr button.pcr-active, .pickr button:focus, .pickr input.pcr-active, .pickr input:focus {
+  box-shadow:none !important;
+}
+
 *,
 *::before,
 *::after {
@@ -61,10 +66,13 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-
+.skill_icon {
+  padding-right: 10px;
+  margin: 10px;
+}
 .ul-class {
 /* list-style-image: url(../icons/icons8-angularjs-100.svg); */
-/* list-style-type: none; */
+list-style-type: none;
 padding-left: 40px;
 display: flex;
 flex-direction: column;
@@ -475,6 +483,17 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   padding: 0;
   border-style: none; }
+
+.live{
+  position: absolute;
+    top: 0;
+    right: 0;
+    background: crimson;
+    text-transform: capitalize;
+    padding: 0px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -8989,7 +9008,7 @@ h1, h2, h3, h4, h5,
 
 .page {
   width: 100%;
-  margin-bottom: 7em; }
+  margin-bottom: 5em; }
   .page.four {
     margin-bottom: 0; }
   .page .heading {

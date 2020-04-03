@@ -5,19 +5,19 @@
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162602429-1"></script>
 			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
 
-			  gtag('config', 'UA-162602429-1');
+				gtag('config', 'UA-162602429-1');
 			</script>
 			<meta charset="utf-8">
 			<meta name="description" content="Designer, Front-end Developer & Mentor, I design and code beautifully simple things, and I love what I do.:)">
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-			<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.webp">
-			<link rel="icon" type="image/webp" sizes="32x32" href="images/favicon-32x32.webp">
-			<link rel="icon" type="image/webp" sizes="16x16" href="images/favicon-16x16.webp">
+			<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+			<link rel="icon" type="image/webp" sizes="32x32" href="images/favicon-32x32.png">
+			<link rel="icon" type="image/webp" sizes="16x16" href="images/favicon-16x16.png">
 			<link rel="manifest" href="images/site.webmanifest">
 			<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 			<link rel="stylesheet" href="css/animate.css">
@@ -36,8 +36,8 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navba-brand " href="index.html"><span class="v1">Sm</span> ith<span style="font-family: monospace;color: #000000;font-size: 45px;">.</span></a>
-		  <div class="Accent" title="Change Accent Color">
+	      <a class="navbar-brand " href="index.html"><span class="v1">Sm</span> ith<span style="font-family: monospace;color: #000000;font-size: 45px;">.</span></a>
+		  <div class="Accent" data-toggle="tooltip" data-placement="right" title="Change Accent color!">
 			  <input type="color" class="color-picker" onchange="change_accent()" >
 		  </div> 
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -378,18 +378,20 @@
 								<!-- <h2 class="h5 font-weight-bold text-center mt-4 mb-3">Other Skills</h2> -->
 								
 								<ul class="ul-class ftco-animate">
-													<li>UI / UX</li>
-													<li>SQL</li>
-													<li>PHP</li>
-													<li>JAVA</li>
-													<li>C / C++</li>
+									<li><img src="./images/icons/icons8-navigation-toolbar-bottom-50.png" class="skill_icon" alt="UI/UX">UI / UX</li>
+									<li><img src="./images/icons/icons8-javascript-50.png" class="skill_icon" alt="UI/UX">ECMAScript 9</li>
+									<li><img src="./images/icons/icons8-vue-js-48.png" class="skill_icon" alt="UI/UX">Vuejs</li>
+									<li><img src="./images/icons/icons8-react-50.png" class="skill_icon" alt="UI/UX">Reactjs</li>
+									<li><img src="./images/icons/icons8-jquery-50.png" class="skill_icon" alt="UI/UX">JQuery</li>
+									<li><img src="./images/icons/icons8-node-js-50.png" class="skill_icon" alt="UI/UX">Express</li>	
 								</ul>
 								<ul class="ul-class ftco-animate">
-									<li>Vuejs</li>
-									<li>JQuery</li>
-									<li>Express</li>
-									<li>JSON Web Tokens</li>
-									<li>JQuery</li>
+									<li><img src="./images/icons/brain.png"  style="width: 60px;height: 50px;" class="skill_icon" alt="UI/UX">NLP</li>
+									<li><img src="./images/icons/pic_logo.svg" style="width: 50px;height: 50px;background: black;border-radius: 100%;padding: 7px;" class="skill_icon" alt="UI/UX">JSON Web Tokens</li>
+									<li><img src="./images/icons/icons8-sql-50.png" class="skill_icon" alt="UI/UX">SQL</li>
+									<li><img src="./images/icons/icons8-php-logo-50.png" class="skill_icon" alt="UI/UX">PHP</li>
+									<li><img src="./images/icons/icons8-java-50.png" class="skill_icon" alt="UI/UX">JAVA</li>
+									<li><img src="./images/icons/icons8-c-programming-50.png"  class="skill_icon" alt="UI/UX">&nbsp;&nbsp;&nbsp;C / C++</li>
 								</ul>
 												
 					  	</div>
@@ -556,8 +558,9 @@
   				<div class="col-md-4">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-color: #e6e6e6;background-size: contain;background-image: url(images/zapp.webp);">
     					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://zappconcept.000webhostapp.com/" target="_blank">Video Editing Prototype</a></h3>
+	    				<div class="text text-center p-4" style="position: relative;top: 0;right: 0;">
+							
+	    					<h3><a href="https://zappconcept.000webhostapp.com/" target="_blank"><span class="live"> Live </span>Video Editing Prototype</a></h3>
 	    					<span>Web Application</span>
 	    				</div>
     				</div>
@@ -566,8 +569,8 @@
     			<div class="col-md-4">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-color: #eeeeee;background-size: contain;background-image: url(images/smith_webv1.webp);">
     					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://smithg09.github.io/myportfolio/" target="_blank">Personal Website</a></h3>
+	    				<div class="text text-center p-4" style="position: relative;top: 0;right: 0;">
+	    					<h3><a href="https://smithg09.github.io/myportfolio/" target="_blank"><span class="live"> Live </span>Personal Website</a></h3>
 	    					<span>Version 1</span>
 	    				</div>
     				</div>
@@ -575,8 +578,8 @@
     			<div class="col-md-4">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-color: #e6e6e6;background-size: contain;background-image: url(images/syrus.webp);">
     					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://syrushackathon.tech/" target="_blank">Syrus Hackathon Website</a></h3>
+	    				<div class="text text-center p-4" style="position: relative;top: 0;right: 0;">
+	    					<h3><a href="https://syrushackathon.tech/" target="_blank"><span class="live"> Live </span>Syrus Hackathon Website</a></h3>
 	    					<span>Web Design</span>
 	    				</div>
     				</div>
@@ -584,8 +587,8 @@
     			<div class="col-md-4">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-color: #eeeeee;background-size: contain;background-image: url(images/covid.webp);">
     					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://trackcovid19.000webhostapp.com/" target="_blank">COVID-19 Statistics</a></h3>
+	    				<div class="text text-center p-4" style="position: relative;top: 0;right: 0;">
+	    					<h3><a href="https://trackcovid19.000webhostapp.com/" target="_blank"><span class="live"> Live </span>COVID-19 Statistics</a></h3>
 	    					<span>Web Application</span>
 	    				</div>
     				</div>
@@ -941,7 +944,15 @@ var name = document.getElementById("name").value
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
 	<script> 
-	
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+
+		$('[data-toggle="tooltip"]').tooltip('show')
+		setTimeout( ()=> {
+			$('[data-toggle="tooltip"]').tooltip('hide')
+		},5000)
+    });
+
 const pickr = Pickr.create({
     el: '.color-picker', theme: 'monolith', // or 'monolith', or 'nano'
 
