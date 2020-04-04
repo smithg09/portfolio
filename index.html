@@ -67,7 +67,10 @@
 			<link rel="stylesheet" href="css/flaticon.css">
 			<link rel="stylesheet" href="css/icomoon.css">
 			<link rel="stylesheet" href="css/style.css">
-		<script data-ad-client="ca-pub-1322409965920451" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<link rel="preload" href="/fonts/open-iconic/open-iconic.woff" as="style">
+			<link rel="preload" href="/fonts/ionicons/fonts/ionicons.woff2?v=4.0.0-19" as="style">
+			<link rel="preload" href="/fonts/icomoon/icomoon.ttf?6tt51o" as="style">
+			<script data-ad-client="ca-pub-1322409965920451" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
 	console.clear() 
 	console_message()
@@ -725,101 +728,27 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="var(--primary)"/></svg></div>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-function send_email() {
-var email = document.getElementById("email").value;
-var subject = document.getElementById("subject").value;
-var body = document.getElementById("body").value;
-var name = document.getElementById("name").value
-
-	Email.send({
-    Host : "smtp.gmail.com",
-    Username : "smith.gajjar@gmail.com",
-    Password : "sg24@4494",
-    To : 'smith.gajjar@gmail.com',
-    From : email,
-    Subject : "By " + name +" : "+subject,
-    Body : body
-}).then(
-  message => {if(message === "OK") {  alert("Message Sent") }else { alert(message)}}
-);
-
-}
-</script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- One of the following themes -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 'classic' theme -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+  	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 'classic' theme -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> 'nano' theme -->
 
 	<!-- Modern or es5 bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
-	<script> 
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-
-		$('[data-toggle="tooltip"]').tooltip('show')
-		setTimeout( ()=> {
-			$('[data-toggle="tooltip"]').tooltip('hide')
-		},5000)
-    });
-
-const pickr = Pickr.create({
-    el: '.color-picker', theme: 'monolith', // or 'monolith', or 'nano'
-
-    swatches: [
-		'rgb(38, 190, 217)',
-		'rgb(62, 100, 255)'
-    ],
-default : '#15b9d7',
-
-
-    components: { // Main components
-        preview: true,
-        opacity: true,
-        hue: true,
-
-        // Input / output Options
-        interaction: {
-            hex: true,
-            rgba: true,
-            save: true
-        }
-    }
-});
-
-
-pickr.on('save', instance => {
-	let root = document.documentElement;
-	let accent_color = instance.toRGBA();
-	total = accent_color[0] + accent_color[1] + accent_color[2]; 
-	console.log(total)
-	// console.log(accent_color[0],accent_color[1],accent_color )
-	if( total > 660 ){
-		alert("Uh oh, Please select color other than WHITE👀")
-	}
-	else {
-		root.style.setProperty('--primary', accent_color);
-	}
-})
-
-
-		function change_accent() {
-		}
-	</script>
+	<script src="./js/utils.js"></script>
   </body>
 </html>
