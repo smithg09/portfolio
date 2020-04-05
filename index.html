@@ -98,7 +98,7 @@
 	    <div class="container">
 	      <a class="navbar-brand " href="/"><span class="v1">Sm</span> ith<span style="font-family: monospace;color: #000000;font-size: 45px;">.</span></a>
 		  <div class="Accent" data-toggle="tooltip" data-placement="right" title="Change Accent color!">
-			  <input type="color" class="color-picker" onchange="change_accent()" >
+			 <label for="color_picker" style="display:none">Accent</label><input type="color" name="color_picker" class="color-picker" onchange="change_accent()" >
 		  </div> 
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -627,19 +627,19 @@
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" id="name">
+                <label style="display:none">name</label><input type="text" class="form-control" placeholder="Your Name" id="name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email" id="email">
+                <label style="display:none">email</label><input type="text" class="form-control" placeholder="Your Email" id="email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" id="subject">
+                <label style="display:none">subject</label><input type="text" class="form-control" placeholder="Subject" id="subject">
               </div>
               <div class="form-group">
                 <textarea name="" id="body" cols="30" rows="7" class="form-control" placeholder="Message" ></textarea>
               </div>
               <div class="form-group">
-                <input type="button" value="Send Message" onclick="send_email()" class="btn btn-primary py-3 px-5">
+                <label style="display:none">submit</label><input type="button" value="Send Message" onclick="send_email()" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
