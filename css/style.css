@@ -9500,7 +9500,7 @@ textarea.form-control {
     text-transform: uppercase;
     color: black;
     letter-spacing: 3px; }
-  .heading-section h1.big {
+  .heading-section h2.big {
     position: absolute;
     top: 0px;
     left: 0;
@@ -9508,7 +9508,7 @@ textarea.form-control {
     color: rgba(255, 255, 255, 0.1);
     z-index: -1;
     font-weight: 900; }
-    .heading-section h1.big.big-2 {
+    .heading-section h2.big.big-2 {
       right: 0; }
   .heading-section h2 {
     font-size: 50px;
