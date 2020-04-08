@@ -715,5 +715,10 @@ function console_message(){const o=["color: slategrey","background: white","box-
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
 	<script src="./js/utils.js"></script>
+	<div id="contTerminal" class="ui-resizable terminalsizeanimated closedTerminal disabledterminal" style="overflow: visible !important" >
+		<div id="onlineTerminal" contenteditable="true" spellcheck="false" ></div>
+		<a id="terminalHandle" data-toggle="tooltip_t" data-placement="top" title="Initializing terminal" href="#" onclick="launchJSTerminal();return false;" class="terminalHandle" ></a>
+		<div class="ui-resizable-handle ui-resizable-w" style="z-index: 90; font-family: 'Comic Sans MS', cursive, sans-serif;"></div>
+	</div>
   </body>
 </html>

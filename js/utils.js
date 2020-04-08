@@ -1,3 +1,25 @@
+function script(url) {
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = url;
+  var x = document.getElementsByTagName("head")[0];
+  x.appendChild(s);
+}
+
+	
+$(document).ready(() => {
+  setTimeout(() => {
+    script("./js/terminal.js");
+    var terminal = document.getElementById("contTerminal");
+    terminal.classList.remove("disabledterminal");
+    document
+      .getElementById("terminalHandle")
+      .setAttribute("data-original-title", "Try out the new terminal!");
+    $('[data-toggle="tooltip_t"]').tooltip("show");
+  }, 10000);
+});
+
 function send_email() {
     
   var e = document.getElementById("email").value,
@@ -22,12 +44,17 @@ function send_email() {
  }
 }
 $(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip(),
-    $('[data-toggle="tooltip"]').tooltip("show"),
-    setTimeout(() => {
-      $('[data-toggle="tooltip"]').tooltip("hide");
-    }, 5e3);
+  $('[data-toggle="tooltip_t"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('[data-toggle="tooltip"]').tooltip("show");
+  $('[data-toggle="tooltip_t"]').tooltip("show");
+  setTimeout(() => {
+    $('[data-toggle="tooltip"]').tooltip("hide");
+    $('[data-toggle="tooltip_t"]').tooltip("hide");
+  }, 5000);
 });
+
 const pickr = Pickr.create({
   el: ".color-picker",
   theme: "monolith",

@@ -5,18 +5,18 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 if (_is_mobile) {
   $("#contTerminal").remove();
 } else {
-  $('#contTerminal').css('position', 'absolute').css('minHeight', $(document).height()+'px');
+  // $('#contTerminal').css('position', 'fixed').css('minHeight', $(document).height()+'px');
 
   //From: http://stackoverflow.com/questions/237104/array-containsobj-in-javascript
-  Array.prototype.contains = function(obj) {
-    var i = this.length;
-    while (i--) {
-      if (this[i] === obj) {
-        return true;
-      }
-    }
-    return false;
-  };
+  // Array.prototype.contains = function(obj) {
+  //   var i = this.length;
+  //   while (i--) {
+  //     if (this[i] === obj) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // };
 
   //Basic idea from: http://stackoverflow.com/questions/19790442/test-if-an-element-can-contain-text
   function canContainText(node) {
@@ -182,14 +182,16 @@ if (_is_mobile) {
       setTimeout(function() {
         $("#contTerminal").removeClass("terminalsizeanimated");
         welcomeText =
-          "<span>/* Welcome to the CodeCell Terminal." +
+          "<span>/* Hello User! Welcome to the my Terminal." +
           breakLine() +
-          "Try <strong>help()</strong> to find out what you can do with the Terminal. Have fun! */</span>" +
-          breakLine() +
+          "To Get Started try <strong>help()</strong> for more information. Happy Coding! */</span>" +
+          // breakLine() +
           breakLine();
-        //$("#onlineTerminal").html(welcomeText);
+        // $("#onlineTerminal").html(welcomeText);
         $("#onlineTerminal").writeText(welcomeText);
-        //setEndOfContenteditable(document.getElementById("onlineTerminal"));
+        setTimeout(() => {
+          setEndOfContenteditable(document.getElementById("onlineTerminal"));
+        },5000)
         //$("#onlineTerminal").focus();
       }, 500);
     }
@@ -764,7 +766,7 @@ if (_is_mobile) {
       $("#onlineTerminal")
         .html()
         .trim() +
-        '<span class="response">But... WHY?</span>' +
+        '<span class="response">NOOO! No wonder u like this font. Reload to reset</span>' +
         breakLine() +
         breakLine()
     );
