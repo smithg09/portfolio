@@ -10038,7 +10038,11 @@ overflow-y: overlay;
 
 @media only screen and (max-width: 800px) {
 #contTerminal {
-  display: none; } }
+  display: none; }
+.tooltip {
+  display: none !important;
+}
+}
 #onlineTerminal {
 color: var(--primary);
 background: #1e1e1e;

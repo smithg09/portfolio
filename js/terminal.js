@@ -182,7 +182,7 @@ if (_is_mobile) {
       setTimeout(function() {
         $("#contTerminal").removeClass("terminalsizeanimated");
         welcomeText =
-          "<span>/* Hello User! Welcome to the my Terminal." +
+          "<span>/* Hello User! Welcome to my Terminal." +
           breakLine() +
           "To Get Started try <strong>help()</strong> for more information. Happy Coding! */</span>" +
           // breakLine() +

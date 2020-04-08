@@ -1,3 +1,11 @@
+window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  navigator.userAgent
+);
+
+if (_is_mobile) {
+  $('[data-toggle="tooltip_t"]').tooltip("hide");
+}
+
 function script(url) {
   var s = document.createElement("script");
   s.type = "text/javascript";
@@ -16,7 +24,9 @@ $(document).ready(() => {
     document
       .getElementById("terminalHandle")
       .setAttribute("data-original-title", "Try out the new terminal!");
-    $('[data-toggle="tooltip_t"]').tooltip("show");
+    if (!_is_mobile) {
+      $('[data-toggle="tooltip_t"]').tooltip("show");
+    }
   }, 10000);
 });
 
@@ -48,7 +58,9 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
   $('[data-toggle="tooltip"]').tooltip("show");
-  $('[data-toggle="tooltip_t"]').tooltip("show");
+  if (!_is_mobile) {
+    $('[data-toggle="tooltip_t"]').tooltip("show");
+  }
   setTimeout(() => {
     $('[data-toggle="tooltip"]').tooltip("hide");
     $('[data-toggle="tooltip_t"]').tooltip("hide");
