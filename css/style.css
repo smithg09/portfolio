@@ -56,20 +56,29 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 .skill_icon {
-  padding-right: 10px;
-  margin: 10px;
+  /* padding-right: 10px; */
+  margin: 10px 5px;
 }
+
+.custom-margin {
+  padding-left: 0px !important;
+}
+
+.custom-margin > li {
+  /* margin: 0 !important; */
+}
+
 .ul-class {
 /* list-style-image: url(../icons/icons8-angularjs-100.svg); */
 list-style-type: none;
 padding-left: 40px;
 display: flex;
-flex-direction: column;
-
+flex-direction: row;
+justify-content: space-evenly;
 flex-wrap: wrap;
 flex-grow: 1;
 }.ul-class > li {
-    margin: 0rem 1.4rem;
+    margin: .3rem .6rem;
 }
 body {
   margin: 0;
@@ -694,6 +703,10 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
+
+.commun {
+  padding: 1rem 1rem 1.5rem 1rem
+}
 
 .container {
   width: 100%;
@@ -9022,7 +9035,8 @@ h1, h2, h3, h4, h5,
     color: var(--primary); }
   .resume-wrap h2 {
     font-size: 24px;
-    font-weight: 700; }
+    font-weight: 700;
+  margin: 0; }
   .resume-wrap .position {
     font-size: 18px;
     font-weight: 700;
