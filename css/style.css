@@ -9637,7 +9637,6 @@ background: #000000; }
     opacity: .9; }
   .project:hover .text, .project:focus .text {
     opacity: 1; }
-
 .aside-stretch {
   background: #718dff; }
   .aside-stretch:after {

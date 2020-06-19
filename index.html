@@ -80,9 +80,9 @@
 	  </div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight justify-content-end align-items-center smstyle ">
-          <div style="animation-delay: .5s;" class="col-lg-5 col-md-9 ftco-animate d-flex align-items-center slide-left">
+          <div style="animation-delay: 4.4s;" class="col-lg-5 col-md-9 ftco-animate d-flex align-items-center slide-left">
           	<div class="text text-title">
-				<span class="subheading"><img style="animation-delay: 1s;" src="./images/wave.png" alt="waving hand"></span>
+				<span class="subheading"><img style="animation-delay: 5s;" src="./images/wave.png" alt="waving hand"></span>
 				<h1>Hi, I'm Smith,</h1>
 				<h2>A <span class="desc_text">Full Stack</span> Developer</h2>
 				<div class="info userselect">Freelancer / Mentor / UI UX Enthusiast</div>
@@ -527,7 +527,20 @@
 	</div>
 	<div id="snackbar"></div>
 	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="var(--primary)"/></svg></div>
+	<div id="ftco-loader" class="show fullscreen">
+		<div data-w-id="eba88bd1-ac3e-619f-f1f5-e1d010ff6eab" class="preloader">
+			<div class="preloader-tekst-wrapper">
+				<div class="designer-mask"><h1 class="tekst-preloader h1f h1common">Web Enthusiast,</h1></div>
+				<div class="designer-mask"><h1 class="tekst-preloader h12 h1common">Freelancer,</h1></div>
+				<div class="designer-mask"><h1 class="tekst-preloader h13 h1common">Mentor.</h1></div>
+			</div>
+			<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
+			<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
+			<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
+			<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
+
+	</div>
+	</div>
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/jquery-migrate-3.0.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
@@ -535,6 +548,10 @@
 		(function () {
 			emailjs.init("user_VTGZJ9C6nrC10O83MpuNR");
 		})();
+		$('.preloader').delay(6000).queue(function (next) { 
+			$(this).css('display', 'none'); 
+			next(); 
+		});
 	</script>
 	<script src="./js/utils.js"></script>
 	<script src="./js/main.js"></script>	
