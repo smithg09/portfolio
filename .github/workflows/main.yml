@@ -1,0 +1,19 @@
+name: Commit Issuer.
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: New Issue
+      uses: wescran/commit-issue-action@v1.0.0
+      with: 
+        sourceRepo: 'https://github.com/smithg09/portfolio'
+        targetRepo: 'https://github.com/smithg09/portfolio'
+    
