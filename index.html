@@ -541,6 +541,10 @@
 			$(this).css('display', 'none'); 
 			next(); 
 		});
+		$('.show').delay(3500).queue(function (next) { 
+			$(this).css('opacity', '0'); 
+			next(); 
+		});
 	</script>
 	<script src="./js/utils.js"></script>
 	<script src="./js/main.js"></script>	
