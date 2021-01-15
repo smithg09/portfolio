@@ -90,11 +90,12 @@
 		</div>
 		<div class="mouse">
 					<a href="#" class="mouse-icon">
-						<p>Learn more about what i do</p>
+						<p>Learn more</p>
 						<div class="mouse-wheel goto-here"><img class="down-icon lazyload" loading="lazy" src="./images/icons/chevron-down.svg" alt="scroll"></span></div>
 					</a>
 				</div>
 		</section>
+		// TODO Refactor web design
 		<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
 			<div class="container">
 				<div class="row d-flex no-gutters justify-content-center align-items-center text-center">
@@ -134,18 +135,22 @@
 					<div class="col-md-4 d-flex flex-row justify-content-center align-items-center flex-wrap border-radius-10 cus-border-new">
 						<div class="project project-custom cus img ftco-animate d-flex justify-content-center align-items-center lazyload" loading="lazy" style="background-image: url(images/ongoing.jpg);">
 						</div>
-						<div class="textp p-2">
+						<div class="textp p-2 custom-proj-box">
 							<div class="my-2">
 								<span class="custom-tag tag-node">Nodejs</span><span class="custom-tag tag-typescript">Typescript</span><span class="custom-tag tag-vuejs">Vuejs</span><span class="custom-tag tag-mongo">Mongodb</span>
 							</div>
 							<div class="cta mt-3">
 								<h3 class="custom-h3" title="Open in new tab">Eklavya: An Edtech Project </h3>
 							</div>
-							<div class="my-2">
+							<!-- <div class="my-2">
 								<a target="_blank" href="https://github.com/jaisoneji/eklavya-client"><span class="custom-tag tag-vuejs" style="border-radius: 5px;background: #17b0cc;">Frontend Repo<span class="ml-1 ion-md-open"></span></span></a><a target="_blank" href="https://github.com/smithg09/eklavya-server"><span class=" custom-tag tag-typescript" style="border-radius: 5px;background: #24292e;">Backend Repo <span class="m;-1 ion-md-open"></span></span></a>
+							</div> -->
+							<p class="mb-0 mt-3 p-0 pb-2 fonts-9" style="text-align: justify">Eklavya is a unified progressive webapp for Virtual School  or College Management.</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link mr-2" title="Open in new tab"><a href="https://github.com/jaisoneji/eklavya-client" rel="noreferrer" target="_blank"><span class="icon-github"></span> Frontend</a></h3>
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="https://github.com/smithg09/eklavya-server" rel="noreferrer" target="_blank"><span class="icon-github"></span> Backend</a></h3>
 							</div>
-							<p class="mb-0 mt-3 p-0 pb-2 fonts-9" style="text-align: justify">Eklavya is a unified progressive webapp for Virtual School / College Management.</p>
-							<p class="m-0 mt-1 p-0 pt-2">
+							<!-- <p class="m-0 mt-1 p-0 pt-2">
 								<ul style="text-align: justify">
 									<li><p class='fonts-9'>Proctored Exams.</p></li>
 									<li><p class='fonts-9'>Live dashboard for faculties.</p></li>
@@ -153,11 +158,11 @@
 									<li><p class='fonts-9'>Options to fetch questions from different websites and predict MCQ based questions from paragraphs.</p></li>
 									<li><p class='fonts-9'>Google Classroom & Calendar Integration.</p></li>
 								</ul>
-							</p>
+							</p> -->
 						</div>
 					</div>
 					<div class="col-md-4 d-flex flex-row justify-content-center align-items-center flex-wrap border-radius-10 cus-border-new">
-						<div class="project project-custom cus img ftco-animate d-flex justify-content-center align-items-center lazyload" data-toggle="modal" data-target="#devCSS" loading="lazy" style="background-size: contain;background-image: url(images/devcss.png);">
+						<div class="project project-custom cus img ftco-animate d-flex justify-content-center align-items-center lazyload" data-toggle="modal" data-target="#devCSS" loading="lazy" style="background-size: cover;background-image: url(images/devcss.png);">
 						</div>
 						<div class="modal fade" id="devCSS" tabindex="-1" role="dialog" aria-labelledby="oneLabel" aria-hidden="true">
 						<div class="modal-dialog modal-lg">
@@ -169,7 +174,9 @@
 							</div>
 						</div>
 					</div>
-						<div class="textp p-2">
+						<div class="textp p-2 custom-proj-box">
+							<div class="my-2">
+								<span class="custom-tag tag-node">CSS</span><span class="custom-tag tag-typescript">Javascript</span>
 							<div class="cta mt-3">
 								<h3 class="custom-h3" title="Open in new tab">DevCSS</h3>
 							</div>
@@ -195,7 +202,11 @@
 							<div class="cta">
 								<h3 class="custom-h3" title="Open in new tab"><a href="https://covid19.smithgajjar.me/" rel="noreferrer" target="_blank">COVID-19 Statistics <span class="ion-md-open"></span></a></h3>
 							</div>
-							<p class="span">A Progressive WebApp</p>
+							<p class="span mb-2">A Progressive WebApp</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="https://covid19.smithgajjar.me/" rel="noreferrer" target="_blank"><span class="ion-md-open"></span> Live URL </a></h3>
+								<!-- <h3 class="custom-h3" title="Open in new tab"><a href="https://smithg09.github.io/myportfolio?id=SG09OWR" rel="noreferrer" target="_blank"><span class="icon-github"></span></a></h3> -->
+							</div>
 						</div>
 					</div>
 					<div class="modal fade" id="one" tabindex="-1" role="dialog" aria-labelledby="oneLabel" aria-hidden="true">
@@ -214,8 +225,12 @@
 							<div class="touch-icon"> <img src="./images/touch.png" alt="touch_icon" /> </div>
 						</div>
 						<div class="textp p-4">
-							<h3 class="custom-h3" title="Open in new tab"><a href="https://smithg09.github.io/myportfolio?id=SG09OWR" rel="noreferrer" target="_blank">Personal Website <span class="ion-md-open"></span></a></h3> 
-							<p class="span">Version 1</p>
+							<h3 class="custom-h3" title="Open in new tab"><a href="https://smithg09.github.io/myportfolio?id=SG09OWR" rel="noreferrer" target="_blank">Personal Website</a></h3> 
+							<p class="span mb-2">Version 1</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="https://smithg09.github.io/myportfolio?id=SG09OWR" rel="noreferrer" target="_blank"><span class="ion-md-open"></span> Live URL </a></h3>
+								<!-- <h3 class="custom-h3" title="Open in new tab"><a href="https://smithg09.github.io/myportfolio?id=SG09OWR" rel="noreferrer" target="_blank"><span class="icon-github"></span></a></h3> -->
+							</div>
 						</div>
 					</div>
 					<div class="modal fade" id="two" tabindex="-1" role="dialog" aria-labelledby="twoLabel" aria-hidden="true">
@@ -234,8 +249,12 @@
 							<div class="touch-icon"> <img src="./images/touch.png" alt="touch_icon" /> </div>
 						</div>
 						<div class="textp p-4">
-							<h3 class="custom-h3" title="Open in new tab"><a href="https://eventbooking-graphql.herokuapp.com/auth" rel="noreferrer" target="_blank">EasyEvent WebApp <span class="ion-md-open"></span></a></h3>
-							<p class="span">Built Using React and Nodejs as a part of GraphQL Implementation</p>
+							<h3 class="custom-h3" title="Open in new tab"><a href="https://eventbooking-graphql.herokuapp.com/auth" rel="noreferrer" target="_blank">EasyEvent WebApp</a></h3>
+							<p class="span mb-2">Built Using React and Nodejs as a part of GraphQL Implementation</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="https://eventbooking-graphql.herokuapp.com/" rel="noreferrer" target="_blank"><span class="ion-md-open"></span> Live URL </a></h3>
+								<h3 class="custom-h3-link ml-2" title="Open in new tab"><a href="https://github.com/smithg09/easyevent-graphql" rel="noreferrer" target="_blank"><span class="icon-github"></span> GitHub URL</a></h3>
+							</div>
 						</div>
 					</div>
 					<div class="modal fade" id="three" tabindex="-1" role="dialog" aria-labelledby="threeLabel" aria-hidden="true">
@@ -258,7 +277,11 @@
 						</div>
 						<div class="textp p-4">
 							<h3 class="custom-h3"><a href="https://github.com/DevUnderflow/nx-node-apollo-grahql-mongo" target="_blank" rel="noreferrer">Nodejs GraphQL API <span class="ion-md-open"></span></a></h3>
-							<p class="span">Nx Nodejs Apollo-TypegraphQL /GraphQL /Express /MongoDB-Typegoose API Boilerplate</p>
+							<p class="span mb-2">Nx Nodejs Apollo-TypegraphQL /GraphQL /Express /MongoDB-Typegoose API Boilerplate</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="https://node-graphql-mongo.herokuapp.com/graphql" rel="noreferrer" target="_blank"><span class="ion-md-open"></span> Live URL </a></h3>
+								<h3 class="custom-h3-link ml-2" title="Open in new tab"><a href="https://github.com/DevUnderflow/nx-node-apollo-grahql-mongo" rel="noreferrer" target="_blank"><span class="icon-github"></span> GitHub URL</a></h3>
+							</div>
 						</div>
 					</div>
 					<div class="modal fade" id="four" tabindex="-1" role="dialog" aria-labelledby="fourLabel" aria-hidden="true">
@@ -281,7 +304,11 @@
 						</div>
 						<div class="textp p-4">
 							<h3 class="custom-h3" title="Download Flashify APK"><a href="https://expo.io/@smithg09/flashify" rel="noreferrer" target="_blank">Flashify: Flashcard Mobile App <span class="ion-md-open"></span></a></h3>
-							<p class="span">React Native</p><br>
+							<p class="span">React Native</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link" title="Open in new tab"><a href="./images/flashify-f9c19e3af7e54028b1547e8bded5226d-signed.apk" rel="noreferrer" download="flashifyApp.apk"><span class="ion-md-cloud-download"></span> Download APK</a></h3>
+								<h3 class="custom-h3-link ml-2" title="Open in new tab"><a href="https://github.com/smithg09/Flashify" rel="noreferrer" target="_blank"><span class="icon-github"></span> GitHub URL</a></h3>
+							</div>
 						</div>
 					</div>  
 					<div class="modal fade" id="five" tabindex="-1" role="dialog" aria-labelledby="fiveLabel" aria-hidden="true">
@@ -305,6 +332,9 @@
 						<div class="textp p-4">
 							<h3 class="custom-h3" title="Open in new tab"><a href="https://github.com/DevUnderflow/laravel-react-mysql-blog-starter" rel="noreferrer" target="_blank">Blog Application<span class="ion-md-open"></span></a></h3>
 							<p class="span">Application made using React Laravel and MYSQL</p>
+							<div class="d-flex">
+								<h3 class="custom-h3-link ml-2" title="Open in new tab"><a href="https://github.com/DevUnderflow/laravel-react-mysql-blog-starter" rel="noreferrer" target="_blank"><span class="icon-github"></span> GitHub URL</a></h3>
+							</div>
 						</div>
 					</div>
 					<div class="modal fade" id="six" tabindex="-1" role="dialog" aria-labelledby="sixLabel" aria-hidden="true">
@@ -695,7 +725,7 @@
 		</div>
 		<div id="snackbar"></div>
 		<!-- <div id="ftco-loader" class="show fullscreen"> -->
-		<div data-w-id="eba88bd1-ac3e-619f-f1f5-e1d010ff6eab" class="preloader">
+		<!-- <div data-w-id="eba88bd1-ac3e-619f-f1f5-e1d010ff6eab" class="preloader">
 				<div class="preloader-tekst-wrapper">
 					<div class="designer-mask"><h1 class="tekst-preloader h1f h1common">Web Enthusiast,</h1></div>
 					<div class="designer-mask"><h1 class="tekst-preloader h12 h1common">Freelancer,</h1></div>
@@ -706,7 +736,7 @@
 				<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
 				<div class="sliding-panel-mask"><div class="sliding-panel"></div></div>
 
-		<!-- </div> -->
+		</div> -->
 		</div>
 		<script src="./js/jquery.min.js"></script>
 		<script src="./js/jquery-migrate-3.0.1.min.js"></script>
