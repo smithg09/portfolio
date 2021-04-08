@@ -3,18 +3,18 @@
 <rss version="2.0">
   <channel>
     <title>Smith Gajjar</title>
-    <link>https://smithgajjar.me</link>
+    <link>https://smithgajjar.tech</link>
     <description />
     <item>
-      <guid>https://smithgajjar.me/</guid>
+      <guid>https://smithgajjar.tech/</guid>
       <title>Smith Gajjar</title>
-      <link>https://smithgajjar.me/</link>
+      <link>https://smithgajjar.tech/</link>
       <description>I'm Smith Gajjar, a 20-year-old Indian FrontEnd developer , Freelancer, Designer , &amp; Mentor, I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences &amp; web applications.</description>
     </item>
     <item>
-      <guid>https://smithgajjar.me/images/Smith_Gajjar_Resume.pdf</guid>
+      <guid>https://smithgajjar.tech/images/Smith_Gajjar_Resume.pdf</guid>
       <title>Smith_Gajjar_Resume.pdf</title>
-      <link>https://smithgajjar.me/images/Smith_Gajjar_Resume.pdf</link>
+      <link>https://smithgajjar.tech/images/Smith_Gajjar_Resume.pdf</link>
       <description />
     </item>
   </channel>
