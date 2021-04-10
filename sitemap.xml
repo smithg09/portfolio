@@ -2,11 +2,21 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
+    <loc>https://smithgajjar.tech</loc>
+    <lastmod>2021-04-10</lastmod>
+  </url>
+  <url>
     <loc>https://smithgajjar.tech/</loc>
+    <lastmod>2021-04-10</lastmod>
+  </url>
+  <url>
+    <loc>https://smithgajjar.tech/images/flashify-f9c19e3af7e54028b1547e8bded5226d-signed.apk</loc>
+    <lastmod>2021-04-10</lastmod>
   </url>
   <url>
     <loc>https://smithgajjar.tech/images/Smith_Gajjar_Resume.pdf</loc>
+    <lastmod>2021-04-10</lastmod>
   </url>
 </urlset>
-<!--<guid value="fc00c547-d3ac-42f6-b93c-bc769414bd17" />-->
+<!--<guid value="026966dc-3e71-42fc-b844-d523713c1c6e" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
