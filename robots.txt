@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
-Sitemap: https://smithgajjar.tech/sitemap.xml
+Sitemap: https://smithgajjar.dev/sitemap.xml
